@@ -30,6 +30,10 @@ textarea {
     display: block;
     width: 100%;
     border: none;
+    box-sizing: border-box;
+    &:focus::placeholder {
+        opacity: 0;
+    }
 }
 
 select {
@@ -202,9 +206,6 @@ a.button {
             font-size: 12px;
             color: $mid-gray;
             border: 1px solid $light-gray;
-            &:focus::placeholder {
-                opacity: 0;
-            }
         }
     }
     .mfp-close {

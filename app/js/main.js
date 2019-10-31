@@ -11,4 +11,11 @@ $(function() {
   $('.callback-link, .quick-order-link').click(function() {
     $('.mfp-close').empty();
   });
+
+  $(".detailed-order-link").click(function() {
+    var elementClick = $(this).attr("href");
+    var destination = $(elementClick).offset().top;
+    $('html, body').animate({ scrollTop: destination }, 600);
+    return false;
+  });
 });

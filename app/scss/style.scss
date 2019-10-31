@@ -129,13 +129,13 @@
         padding: 60px;
         margin-top: 60px;
         border: 5px solid $white;
-        form {
+        &-row {
+            width: 100%;
             display: flex;
             justify-content: space-between;
         }
-        &-row {
-            display: flex;
-            justify-content: space-between;
+        &-row:last-child {
+            margin-top: 18px;
         }
         &-column {
             max-width: 240px;
@@ -144,15 +144,43 @@
             flex-direction: column;
             justify-content: space-between;
         }
-    }
-    &__input {
         input,
         select,
         textarea {
             padding: 12px 18px;
             margin-top: 8px;
+            color: $gray;
+            font-family: "Lato", sans-serif;
+            font-size: 13px;
         }
-        textarea {}
+        textarea {
+            height: 124px;
+        }
+        input[type="submit"] {
+            margin-top: auto;
+            font-size: 16px;
+            color: $white;
+        }
+    }
+    &__input,
+    &__select {
+        flex-basis: 65px;
+    }
+    &__select {
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 40px;
+            height: 20px;
+            right: 0;
+            bottom: 10px;
+            background-image: url(../img/triangle-down.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            border-left: 1px solid $light-gray;
+            pointer-events: none;
+        }
     }
 }
 

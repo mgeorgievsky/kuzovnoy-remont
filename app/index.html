@@ -53,7 +53,7 @@
                         </div>
                     </div>
                     <div class="header__buttons-box">
-                        <a href="#" class="header__button button button-outlined detailed-order-link">
+                        <a href="#detailed-order" class="header__button button button-outlined detailed-order-link">
                             Подробная заявка
                         </a>
                         <div class="header__buttons-description">
@@ -107,11 +107,82 @@
         </div>
     </section>
 
-    <section class="detailed-order">
+    <section class="detailed-order" id="detailed-order">
         <div class="container">
             <div class="section-title">Подробная заявка</div>
             <div class="section-subtitle">Заполните форму и получите максимально точную цену!</div>
             <div class="detailed-order__form">
+                <form action="">
+                    <div class="detailed-order__form-row">
+                        <div class="detailed-order__form-column">
+                            <div class="detailed-order__select">
+                                <label for="car-brand">Марка:</label>
+                                <select name="brand" id="car-brand">
+                                            <option value="none">Выберите марку</option>
+                                            <option value="mazda">Mazda</option>
+                                            <option value="bmw">BMW</option>
+                                            <option value="toyota">Toyota</option>
+                                            <option value="peugeot">Peugeot</option>
+                                        </select>
+                            </div>
+                            <div class="detailed-order__select">
+                                <label for="car-model">Модель:</label>
+                                <select name="model" id="car-model">
+                                            <option value="none">Выберите модель</option>
+                                            <option value="model-1">Model 1</option>
+                                            <option value="model-2">Model 2</option>
+                                            <option value="model-3">Model 3</option>
+                                            <option value="model-4">Model 4</option>
+                                        </select>
+                            </div>
+                        </div>
+
+                        <div class="detailed-order__form-column">
+                            <div class="detailed-order__textarea">
+                                <label for="car-parts">Необходимые детали:</label>
+                                <textarea name="parts" id="car-parts" placeholder="Введите необходимые детали"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="detailed-order__form-column">
+                            <div class="detailed-order__input">
+                                <label for="client-name">Ваш телефон:</label>
+                                <input name="client-name" type="tel" id="client-phone" placeholder="Введите ваш телефон">
+                            </div>
+                            <div class="detailed-order__input">
+                                <label for="client-name">Ваш e-mail:</label>
+                                <input name="client-name" type="email" id="client-email" placeholder="Введите ваш E-mail">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detailed-order__form-row">
+                        <div class="detailed-order__form-column">
+                            <div class="detailed-order__select">
+                                <label for="car-year">Год выпуска:</label>
+                                <select name="brand" id="car-year">
+                                            <option value="none">Выберите год</option>
+                                            <option value="1998">1998</option>
+                                            <option value="2001">2001</option>
+                                            <option value="2003">2003</option>
+                                            <option value="2008">2008</option>
+                                        </select>
+                            </div>
+                        </div>
+                        <div class="detailed-order__form-column">
+                            <div class="detailed-order__input">
+                                <label for="client-name">Ваше имя:</label>
+                                <input name="client-name" type="text" id="client-name" placeholder="Введите ваше имя">
+                            </div>
+                        </div>
+                        <div class="detailed-order__form-column">
+                            <input type="submit" class="button" value="Узнать цену">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- <div class="detailed-order__form">
                 <form action="">
 
                     <div class="detailed-order__form-column">
@@ -167,7 +238,7 @@
                         <input type="submit" class="button" value="Узнать цену">
                     </div>
 
-            </div>
+            </div> -->
         </div>
 
 
