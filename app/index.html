@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <section class="header">
+        <div class="header__overlay">
+            <div class="container">
+                <div class="header__top">
+                    <img src="img/logo.png" alt="Logo" class="header__logo">
+                    <div class="header__phone">
+                        <div class="header__phone-number">8 800 232 32 12</div>
+                        <a href="#callback-modal" class="header__phone-callback callback-link">Заказать обратный звонок</a>
+                    </div>
+                </div>
+                <div class="header__title">Продажа кузовных запчастей</div>
+                <div class="header__subtitle">с заводской покраской без пробега по РФ</div>
+                <div class="header__features">
+                    <div class="header__feature">
+                        <div class="header__feature-image">
+                            <img src="img/transportation.png" alt="">
+                        </div>
+                        <div class="header__feature-text">Доставка по РФ от 3-х дней</div>
+                    </div>
+                    <div class="header__feature">
+                        <div class="header__feature-image">
+                            <img src="img/new-condition.png" alt="">
+                        </div>
+                        <div class="header__feature-text">Новое состояние по цене б/у</div>
+                    </div>
+                    <div class="header__feature">
+                        <div class="header__feature-image">
+                            <img src="img/list.png" alt="">
+                        </div>
+                        <div class="header__feature-text">Наличие более 500 различных деталей</div>
+                    </div>
+                </div>
+                <div class="header__buttons">
+                    <div class="header__buttons-box">
+                        <a href="#quick-order-modal" class="header__button button quick-order-link">
+                            Быстрая заявка
+                        </a>
+                        <div class="header__buttons-description">
+                            Мы перезвоним Вам для уточнения деталей.
+                        </div>
+                    </div>
+                    <div class="header__buttons-box">
+                        <a href="#" class="header__button button button-outlined detailed-order-link">
+                            Подробная заявка
+                        </a>
+                        <div class="header__buttons-description">
+                            Заполните подробную заявку онлайн!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="features__inner">
+                <div class="features__item">
+                    <div class="features__item-image">
+                        <img src="img/features-names.png" alt="">
+                    </div>
+                    <div class="features__item-title">Более 1000 наименований</div>
+                    <div class="features__item-text">Возможность заказа и подбора более чем по 2000 наименований деталей</div>
+                </div>
+                <div class="features__item">
+                    <div class="features__item-image">
+                        <img src="img/features-delivery.png" alt="">
+                    </div>
+                    <div class="features__item-title">Доставка в любой регион РФ</div>
+                    <div class="features__item-text">Мы работаем с любой транспортной компанией и осуществляем доставку в любой регион РФ</div>
+                </div>
+                <div class="features__item">
+                    <div class="features__item-image">
+                        <img src="img/features-new.png" alt="">
+                    </div>
+                    <div class="features__item-title">Новое состояние деталей</div>
+                    <div class="features__item-text">Наши детали не были в употреблении и имеют состояние новых</div>
+                </div>
+                <div class="features__item">
+                    <div class="features__item-image">
+                        <img src="img/features-quality.png" alt="">
+                    </div>
+                    <div class="features__item-title">Европейское качество</div>
+                    <div class="features__item-text">Все наши детали привезены из Европы, что гарантирует отличное качество.</div>
+                </div>
+                <div class="features__item">
+                    <div class="features__item-image">
+                        <img src="img/features-contract.png" alt="">
+                    </div>
+                    <div class="features__item-title">Работаем по договору</div>
+                    <div class="features__item-text">Все, что мы делаем - официально. Мы заключаем договор купли-продажи и предоставляем все необходимые документыю</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="detailed-order">
+        <div class="container">
+            <div class="section-title">Подробная заявка</div>
+            <div class="section-subtitle">Заполните форму и получите максимально точную цену!</div>
+            <div class="detailed-order__form">
+                <form action="">
+
+                    <div class="detailed-order__form-column">
+                        <div class="detailed-order__input">
+                            <label for="car-brand">Марка:</label>
+                            <select name="brand" id="car-brand">
+                                <option value="mazda">Mazda</option>
+                                <option value="bmw">BMW</option>
+                                <option value="toyota">Toyota</option>
+                                <option value="peugeot">Peugeot</option>
+                            </select>
+                        </div>
+                        <div class="detailed-order__input">
+                            <label for="car-model">Модель:</label>
+                            <select name="model" id="car-model">
+                                <option value="model-1">Model 1</option>
+                                <option value="model-2">Model 2</option>
+                                <option value="model-3">Model 3</option>
+                                <option value="model-4">Model 4</option>
+                            </select>
+                        </div>
+                        <div class="detailed-order__input">
+                            <label for="car-year">Год выпуска:</label>
+                            <select name="brand" id="car-year">
+                                <option value="1998">1998</option>
+                                <option value="2001">2001</option>
+                                <option value="2003">2003</option>
+                                <option value="2008">2008</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="detailed-order__form-column">
+                        <div class="detailed-order__input">
+                            <label for="car-parts">Необходимые детали:</label>
+                            <textarea name="parts" id="car-parts" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="detailed-order__input">
+                            <label for="client-name">Ваше имя:</label>
+                            <input name="client-name" type="text" id="client-name">
+                        </div>
+                    </div>
+
+                    <div class="detailed-order__form-column">
+                        <div class="detailed-order__input">
+                            <label for="client-name">Ваш телефон:</label>
+                            <input name="client-name" type="tel" id="client-phone">
+                        </div>
+                        <div class="detailed-order__input">
+                            <label for="client-name">Ваш e-mail:</label>
+                            <input name="client-name" type="email" id="client-email">
+                        </div>
+                        <input type="submit" class="button" value="Узнать цену">
+                    </div>
+
+            </div>
+        </div>
+
+
+
+        </form>
+        </div>
+        </div>
+    </section>
+
+    <!-- OPEN: MODALS -->
+    <div id="callback-modal" class="modal mfp-hide">
+        <div class="modal__title">
+            Заказ обратного звонка
+        </div>
+        <div class="modal__subtitle">
+            Оставьте заявку и мы Вам перезвоним!
+        </div>
+        <div class="modal__form">
+            <form action="">
+                <div class="modal__form-name"><input type="text" name="client-name" placeholder="Ваше имя"></div>
+                <div class="modal__form-phone"><input type="text" name="client-phone" placeholder="Ваш телефон"></div>
+                <div class="modal__form-email"><input type="text" name="client-email" placeholder="Ваша почта"></div>
+                <input type="submit" value="Отправить заявку" class="button">
+            </form>
+        </div>
+    </div>
+
+    <div id="quick-order-modal" class="modal mfp-hide">
+        <div class="modal__title">
+            Быстрая заявка
+        </div>
+        <div class="modal__subtitle">
+            Оставьте заявку и мы Вам перезвоним!
+        </div>
+        <div class="modal__form">
+            <form action="">
+                <div class="modal__form-name"><input type="text" name="client-name" placeholder="Ваше имя"></div>
+                <div class="modal__form-phone"><input type="text" name="client-phone" placeholder="Ваш телефон"></div>
+                <input type="submit" value="Отправить заявку" class="button">
+            </form>
+        </div>
+    </div>
+    <!-- CLOSE: MODALS -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
