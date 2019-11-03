@@ -1,0 +1,41 @@
+@media (max-width: 960px) {
+    .container {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 580px) {
+    .header {
+        &__features {
+            display: block;
+            margin-top: 30px;
+        }
+        &__buttons {
+            display: block;
+            margin-top: 80px;
+        }
+        &__feature,
+        &__buttons-box,
+        &__buttons-box+&__buttons-box {
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .header {
+        &__top {
+            display: block;
+        }
+        &__logo,
+        &__phone {
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 30px;
+        }
+        &__title {
+            margin-top: 50px;
+        }
+    }
+}
