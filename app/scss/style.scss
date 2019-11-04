@@ -118,9 +118,6 @@
             margin-top: 15px;
         }
     }
-    &__item+&__item {
-        margin-left: 20px;
-    }
 }
 
 .detailed-order {
@@ -128,15 +125,14 @@
     background-color: $lighter-gray;
     &__form {
         padding: 60px;
+        padding-top: 50px;
         margin-top: 60px;
         border: 5px solid $white;
-        &-row {
+        &-inner {
             width: 100%;
             display: flex;
             justify-content: space-between;
-        }
-        &-row:last-child {
-            margin-top: 18px;
+            flex-wrap: wrap;
         }
         &-column {
             max-width: 240px;
@@ -155,17 +151,25 @@
             font-size: 13px;
         }
         textarea {
-            height: 124px;
+            height: 114px;
         }
         input[type="submit"] {
+            position: absolute;
             margin-top: auto;
             font-size: 16px;
             color: $white;
+            bottom: 0;
         }
+    }
+    &__input,
+    &__select,
+    &__textarea {
+        margin-top: 10px;
     }
     &__input,
     &__select {
         flex-basis: 65px;
+        position: relative;
     }
     &__select {
         position: relative;
@@ -216,6 +220,9 @@
         border: 5px solid $lighter-gray;
         padding: 20px;
     }
+    iframe {
+        height: 435px;
+    }
 }
 
 .reviews {
@@ -227,7 +234,7 @@
         flex-wrap: wrap;
     }
     &__item {
-        width: 460px;
+        width: 48%;
         margin: 0 auto;
         margin-top: 55px;
         display: flex;
@@ -285,10 +292,9 @@
         }
     }
     &__input {
-        flex-basis: 290px;
+        width: 45%;
         margin-top: 10px;
     }
-    &__input+&__input {}
 }
 
 .contacts {
@@ -300,6 +306,7 @@
         left: 50%;
         transform: translateX(-50%);
         max-width: 480px;
+        width: 100%;
         color: $white;
         background-color: $main;
         text-align: center;
@@ -329,6 +336,9 @@
 }
 
 .footer {
+    &__ogo {
+        text-align: center;
+    }
     &__inner {
         padding: 30px 0;
         display: flex;

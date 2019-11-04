@@ -2,6 +2,55 @@
     .container {
         padding: 0 30px;
     }
+    .detailed-order {
+        &__form {
+            &-column {
+                max-width: 47%;
+            }
+            &-column:last-child {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .reviews {
+        &__item {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .detailed-order {
+        &__form {
+            padding: 30px;
+            &-column {
+                max-width: 100%;
+            }
+        }
+    }
+    .video {
+        .section-title {
+            padding: 0 30px;
+        }
+        .container {
+            padding: 0;
+        }
+        &__inner {
+            border: none;
+            padding: 0;
+        }
+        iframe {
+            height: 400px;
+        }
+    }
+    .consultation {
+        &__input {
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 580px) {
@@ -21,6 +70,33 @@
             margin-top: 40px;
         }
     }
+    .video {
+        iframe {
+            height: 325px;
+        }
+    }
+    .reviews {
+        &__item {
+            flex-wrap: wrap;
+            text-align: center;
+            width: 100%;
+            &-photo {
+                width: 100%;
+            }
+            &-content {
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .contacts {
+        &__box {
+            top: 0;
+            padding: 40px 20px;
+        }
+    }
 }
 
 @media (max-width: 450px) {
@@ -36,6 +112,59 @@
         }
         &__title {
             margin-top: 50px;
+        }
+    }
+    .detailed-order {
+        &__form {
+            margin-top: 30px;
+            border: none;
+            padding: 0;
+        }
+    }
+    .video {
+        iframe {
+            height: 253px;
+        }
+    }
+    .consultation {
+        &__form {
+            border: none;
+            padding: 0;
+            margin-top: 30px;
+        }
+    }
+    .footer {
+        &__inner {
+            display: block;
+            padding-top: 0;
+        }
+        &__logo,
+        &__phone {
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 30px;
+        }
+        &__title {
+            margin-top: 50px;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .parts {
+        &__logo {
+            width: 50%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .video {
+        iframe {
+            height: 180px;
         }
     }
 }
